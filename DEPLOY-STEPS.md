@@ -137,6 +137,47 @@ checking `build.js` — it's the one place the two files are coupled.
 
 ---
 
+## Code changes now go through pull requests
+
+`main` is protected: non-admin collaborators can't push straight to it, and
+every code change should go through a branch and a pull request, which gets
+a **Netlify Deploy Preview** — a real, working URL for that exact change —
+before it ever reaches the live site.
+
+This exists because of a real incident: a change shipped straight to `main`
+that looked fine locally but broke every image on every page except the
+homepage, live, with no warning. A PR preview would have caught it before
+anyone but the editor saw it.
+
+**The workflow:**
+```bash
+git checkout -b short-description-of-change
+# make the change
+git add .
+git commit -m "Describe what changed"
+git push -u origin short-description-of-change
+gh pr create   # or open the PR on github.com — GitHub prompts for this after a branch push
+```
+Netlify comments on the PR with a preview link once it builds (usually under
+a minute). Check the actual pages that changed on that link, not just that
+the build succeeded — the images bug above passed a clean build. Once it
+looks right, merge the PR; Netlify then rebuilds and deploys `main` as usual.
+
+**One deliberate exception: repo admins can still push directly.**
+Branch protection has `enforce_admins` turned *off*, not on. This is not an
+oversight — Decap CMS's `github` backend (`publish_mode: simple`) commits
+straight to `main` when someone publishes at `/admin/`, authenticated as
+whichever GitHub account is logged in. If that account is a repo admin (as
+Brenton's and Jennifer's are), a hard block on admin pushes would break
+publishing from the CMS entirely. So the PR requirement is a hard wall for
+outside collaborators, and a **discipline** for admins and for Claude:
+code changes go through the branch → PR → preview → merge flow every time,
+even though the door is technically still open to skip it. CMS content
+edits are unaffected either way — they were never the source of the bug
+this workflow exists to catch.
+
+---
+
 ## Corrections to my earlier audit
 
 Worth stating plainly, since I sent you a scored audit built on wrong readings:
