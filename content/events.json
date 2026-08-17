@@ -121,103 +121,103 @@
   "partners": [
     {
       "name": "Mastercard",
-      "logo": "images/logos/mastercard.png",
+      "logo": "/images/logos/mastercard.png",
       "url": ""
     },
     {
       "name": "FinTech Australia",
-      "logo": "images/logos/fintech-australia.png",
+      "logo": "/images/logos/fintech-australia.png",
       "url": ""
     },
     {
       "name": "Baker McKenzie",
-      "logo": "images/logos/baker-mckenzie.png",
+      "logo": "/images/logos/baker-mckenzie.png",
       "url": ""
     },
     {
       "name": "King & Wood Mallesons",
-      "logo": "images/logos/king-wood-mallesons.png",
+      "logo": "/images/logos/king-wood-mallesons.png",
       "url": ""
     },
     {
       "name": "Chapman Tripp",
-      "logo": "images/logos/chapman-tripp.png",
+      "logo": "/images/logos/chapman-tripp.png",
       "url": ""
     }
   ],
   "womenGallery": [
     {
-      "src": "images/women/flagship-panel-wide.jpg",
+      "src": "/images/women/flagship-panel-wide.jpg",
       "caption": "Panel discussion: Progress Beyond Policy",
       "event": "2026 Flagship Event"
     },
     {
-      "src": "images/women/flagship-panel.jpg",
+      "src": "/images/women/flagship-panel.jpg",
       "caption": "Panellists in conversation",
       "event": "2026 Flagship Event"
     },
     {
-      "src": "images/women/flagship-panellists.jpg",
+      "src": "/images/women/flagship-panellists.jpg",
       "caption": "The Progress Beyond Policy panel",
       "event": "2026 Flagship Event"
     },
     {
-      "src": "images/women/flagship-speakers.jpg",
+      "src": "/images/women/flagship-speakers.jpg",
       "caption": "Speakers and hosts",
       "event": "2026 Flagship Event"
     },
     {
-      "src": "images/women/flagship-welcome.jpg",
+      "src": "/images/women/flagship-welcome.jpg",
       "caption": "Welcome address to a full room",
       "event": "2026 Flagship Event"
     },
     {
-      "src": "images/women/flagship-audience.jpg",
+      "src": "/images/women/flagship-audience.jpg",
       "caption": "Guests at the flagship event",
       "event": "2026 Flagship Event"
     },
     {
-      "src": "images/women/horizons-speakers.jpg",
+      "src": "/images/women/horizons-speakers.jpg",
       "caption": "Speakers at New Horizons: Shaping the 2030 Vision for the CDR",
       "event": "2030 Vision Event"
     },
     {
-      "src": "images/women/horizons-panel-candid.jpg",
+      "src": "/images/women/horizons-panel-candid.jpg",
       "caption": "A lighter moment on the panel",
       "event": "2030 Vision Event"
     },
     {
-      "src": "images/women/horizons-audience.jpg",
+      "src": "/images/women/horizons-audience.jpg",
       "caption": "Guests during the panel discussion",
       "event": "2030 Vision Event"
     },
     {
-      "src": "images/women/horizons-networking.jpg",
+      "src": "/images/women/horizons-networking.jpg",
       "caption": "Conversations over lunch",
       "event": "2030 Vision Event"
     },
     {
-      "src": "images/women/intersekt-roundtable-hosts.jpg",
+      "src": "/images/women/intersekt-roundtable-hosts.jpg",
       "caption": "Roundtable Luncheon at Intersekt 2025, Melbourne",
       "event": "Intersekt 2025"
     },
     {
-      "src": "images/women/roundtable-discussion.jpg",
+      "src": "/images/women/roundtable-discussion.jpg",
       "caption": "Group discussion session",
       "event": "Roundtable"
     },
     {
-      "src": "images/women/workshop-group.jpg",
+      "src": "/images/women/workshop-group.jpg",
       "caption": "Workshop attendees from across the ANZ ecosystem",
       "event": "Workshop"
     },
     {
-      "src": "images/women/workshop-opening.jpg",
+      "src": "/images/women/workshop-opening.jpg",
       "caption": "Opening the workshop \u2014 Connect. Amplify. Grow.",
       "event": "Workshop"
     },
     {
-      "src": "images/women/workshop-session.jpg",
+      "src": "/images/women/workshop-session.jpg",
       "caption": "Setting the workshop ground rules",
       "event": "Workshop"
     }

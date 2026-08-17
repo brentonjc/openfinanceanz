@@ -130,22 +130,22 @@
   "reportPartners": [
     {
       "name": "FinTech Australia",
-      "logo": "images/logos/fintech-australia.png",
+      "logo": "/images/logos/fintech-australia.png",
       "url": ""
     },
     {
       "name": "FinTech NZ",
-      "logo": "images/logos/fintech-nz.png",
+      "logo": "/images/logos/fintech-nz.png",
       "url": ""
     },
     {
       "name": "Payments NZ",
-      "logo": "images/logos/payments-nz.png",
+      "logo": "/images/logos/payments-nz.png",
       "url": ""
     },
     {
       "name": "Mastercard",
-      "logo": "images/logos/mastercard.png",
+      "logo": "/images/logos/mastercard.png",
       "url": ""
     }
   ]

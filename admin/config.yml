@@ -22,9 +22,9 @@ backend:
   # If you self-host the OAuth proxy instead, set base_url/auth_endpoint here.
 
 # Where uploaded images are committed in the repo
-media_folder: "images/events"
+media_folder: "/images/events"
 # How those images are referenced from the page
-public_folder: "images/events"
+public_folder: "/images/events"
 
 # Shows a "publish" workflow with drafts. Set to `simple` for
 # immediate publishing with no draft stage.
@@ -55,7 +55,7 @@ collections:
                 widget: "image"
                 required: false
                 media_folder: "/images"
-                public_folder: "images"
+                public_folder: "/images"
                 hint: "Wide landscape image. A dark overlay is applied automatically so white text stays readable."
               - label: "Impact statistics"
                 name: "stats"
@@ -75,7 +75,7 @@ collections:
                     widget: "image"
                     required: false
                     media_folder: "/images/logos"
-                    public_folder: "images/logos"
+                    public_folder: "/images/logos"
               - label: "Featured testimonial 2 (Mastercard)"
                 name: "testimonial2"
                 widget: "object"
@@ -89,7 +89,7 @@ collections:
                     widget: "image"
                     required: false
                     media_folder: "/images"
-                    public_folder: "images"
+                    public_folder: "/images"
 
               - label: "Featured testimonial"
                 name: "testimonial"
@@ -104,7 +104,7 @@ collections:
                     widget: "image"
                     required: false
                     media_folder: "/images"
-                    public_folder: "images"
+                    public_folder: "/images"
 
           - label: "About page"
             name: "about"
@@ -125,7 +125,7 @@ collections:
                     widget: "image"
                     required: false
                     media_folder: "/images/team"
-                    public_folder: "images/team"
+                    public_folder: "/images/team"
                     hint: "Square headshot."
               - label: "Ecosystem Champions"
                 name: "ecosystemChampions"
@@ -141,7 +141,7 @@ collections:
                     widget: "image"
                     required: false
                     media_folder: "/images/team"
-                    public_folder: "images/team"
+                    public_folder: "/images/team"
                     hint: "Square headshot."
               - label: "Timeline"
                 name: "timeline"
@@ -179,7 +179,7 @@ collections:
                     widget: "image"
                     required: false
                     media_folder: "/images/reports"
-                    public_folder: "images/reports"
+                    public_folder: "/images/reports"
                     hint: "Portrait cover of the latest edition (3:4 works best)."
               - label: "New Zealand"
                 name: "nz"
@@ -194,7 +194,7 @@ collections:
                     widget: "image"
                     required: false
                     media_folder: "/images/reports"
-                    public_folder: "images/reports"
+                    public_folder: "/images/reports"
                     hint: "Portrait cover of the latest edition (3:4 works best)."
 
           - label: "Report partners"
@@ -210,7 +210,7 @@ collections:
                 widget: "image"
                 required: false
                 media_folder: "/images/logos"
-                public_folder: "images/logos"
+                public_folder: "/images/logos"
               - { label: "Website", name: "url", widget: "string", required: false }
 
           - label: "Events page"
@@ -355,7 +355,7 @@ collections:
                 required: false
                 default: ""
                 media_folder: "/images/women"
-                public_folder: "images/women"
+                public_folder: "/images/women"
                 hint: "Landscape (4:3) works best. Leave blank to keep the placeholder."
               - label: "Description / caption"
                 name: "caption"
