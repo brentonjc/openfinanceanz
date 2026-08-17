@@ -1,0 +1,395 @@
+# ============================================================
+# Decap CMS configuration - Open Finance ANZ
+# ------------------------------------------------------------
+# BEFORE THIS WORKS you must set `repo` below to your actual
+# GitHub repository, in the form  owner/repository-name
+# e.g.  repo: openfinanceanz/website
+#
+# AUTH NOTE: this uses the `github` backend, NOT the older
+# `git-gateway` backend. Netlify Identity and Git Gateway were
+# deprecated by Netlify in February 2025 and are no longer
+# maintained, so we deliberately avoid them. With the github
+# backend, editors sign in with a GitHub account that has write
+# access to the repo.
+# ============================================================
+
+backend:
+  name: github
+  repo: brentonjc/openfinanceanz
+  branch: main
+  # Netlify's GitHub OAuth provider handles the login handshake.
+  # Enable it at: Netlify site > Site configuration > Access control > OAuth
+  # If you self-host the OAuth proxy instead, set base_url/auth_endpoint here.
+
+# Where uploaded images are committed in the repo
+media_folder: "images/events"
+# How those images are referenced from the page
+public_folder: "images/events"
+
+# Shows a "publish" workflow with drafts. Set to `simple` for
+# immediate publishing with no draft stage.
+publish_mode: simple
+
+site_url: https://www.openfinanceanz.com
+display_url: https://www.openfinanceanz.com
+
+collections:
+  - name: "site_content"
+    label: "Events & Partners"
+    files:
+      - name: "site_copy"
+        label: "Website Copy"
+        file: "content/site.json"
+        format: "json"
+        description: "Headlines, statistics, testimonial and images across the site. Leave a field blank to keep the built-in default."
+        fields:
+          - label: "Home page"
+            name: "home"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Hero headline", name: "heroHeadline", widget: "string", required: false }
+              - { label: "Hero subtitle", name: "heroSubtitle", widget: "text", required: false }
+              - label: "Hero background image"
+                name: "heroImage"
+                widget: "image"
+                required: false
+                media_folder: "/images"
+                public_folder: "images"
+                hint: "Wide landscape image. A dark overlay is applied automatically so white text stays readable."
+              - label: "Impact statistics"
+                name: "stats"
+                widget: "list"
+                required: false
+                summary: "{{fields.value}} — {{fields.label}}"
+                fields:
+                  - { label: "Number", name: "value", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+              - label: "Featured in — logos"
+                name: "featuredIn"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Logo"
+                    name: "logo"
+                    widget: "image"
+                    required: false
+                    media_folder: "/images/logos"
+                    public_folder: "images/logos"
+              - label: "Featured testimonial 2 (Mastercard)"
+                name: "testimonial2"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Quote", name: "quote", widget: "text", required: false }
+                  - { label: "Name", name: "name", widget: "string", required: false }
+                  - { label: "Title / organisation", name: "title", widget: "string", required: false }
+                  - label: "Photo"
+                    name: "photo"
+                    widget: "image"
+                    required: false
+                    media_folder: "/images"
+                    public_folder: "images"
+
+              - label: "Featured testimonial"
+                name: "testimonial"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Quote", name: "quote", widget: "text", required: false }
+                  - { label: "Name", name: "name", widget: "string", required: false }
+                  - { label: "Title / organisation", name: "title", widget: "string", required: false }
+                  - label: "Photo"
+                    name: "photo"
+                    widget: "image"
+                    required: false
+                    media_folder: "/images"
+                    public_folder: "images"
+
+          - label: "About page"
+            name: "about"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Hero headline", name: "heroHeadline", widget: "text", required: false }
+              - label: "Team"
+                name: "team"
+                widget: "list"
+                required: false
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Role", name: "role", widget: "string", required: false }
+                  - label: "Photo"
+                    name: "photo"
+                    widget: "image"
+                    required: false
+                    media_folder: "/images/team"
+                    public_folder: "images/team"
+                    hint: "Square headshot."
+              - label: "Ecosystem Champions"
+                name: "ecosystemChampions"
+                widget: "list"
+                required: false
+                summary: "{{fields.name}}"
+                hint: "Individuals recognised for going above and beyond for the community."
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Role", name: "role", widget: "string", required: false }
+                  - label: "Photo"
+                    name: "photo"
+                    widget: "image"
+                    required: false
+                    media_folder: "/images/team"
+                    public_folder: "images/team"
+                    hint: "Square headshot."
+              - label: "Timeline"
+                name: "timeline"
+                widget: "list"
+                required: false
+                summary: "{{fields.year}} — {{fields.text}}"
+                fields:
+                  - { label: "Year", name: "year", widget: "string" }
+                  - { label: "Milestone", name: "text", widget: "text" }
+
+          - label: "Women in Open Banking page"
+            name: "women"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Hero headline", name: "heroHeadline", widget: "string", required: false }
+              - { label: "Tagline", name: "heroTagline", widget: "string", required: false }
+
+          - label: "Ecosystem Reports page"
+            name: "ecosystem"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Hero headline", name: "heroHeadline", widget: "string", required: false }
+              - label: "Australia"
+                name: "au"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Overview of the Australian CDR", name: "overview", widget: "text", required: false }
+                  - { label: "Description of our Australian reports", name: "reports", widget: "text", required: false }
+                  - { label: "Number of editions", name: "editions", widget: "string", required: false }
+                  - label: "Latest report cover image"
+                    name: "coverImage"
+                    widget: "image"
+                    required: false
+                    media_folder: "/images/reports"
+                    public_folder: "images/reports"
+                    hint: "Portrait cover of the latest edition (3:4 works best)."
+              - label: "New Zealand"
+                name: "nz"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Overview of the New Zealand CDR", name: "overview", widget: "text", required: false }
+                  - { label: "Description of our New Zealand reports", name: "reports", widget: "text", required: false }
+                  - { label: "Number of editions", name: "editions", widget: "string", required: false }
+                  - label: "Latest report cover image"
+                    name: "coverImage"
+                    widget: "image"
+                    required: false
+                    media_folder: "/images/reports"
+                    public_folder: "images/reports"
+                    hint: "Portrait cover of the latest edition (3:4 works best)."
+
+          - label: "Report partners"
+            name: "reportPartners"
+            widget: "list"
+            required: false
+            summary: "{{fields.name}}"
+            hint: "Shown on the Ecosystem Reports page."
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "Logo"
+                name: "logo"
+                widget: "image"
+                required: false
+                media_folder: "/images/logos"
+                public_folder: "images/logos"
+              - { label: "Website", name: "url", widget: "string", required: false }
+
+          - label: "Events page"
+            name: "events"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Hero headline", name: "heroHeadline", widget: "string", required: false }
+
+          - label: "Contact page"
+            name: "contact"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Hero headline", name: "heroHeadline", widget: "string", required: false }
+
+      - name: "events"
+        label: "Events"
+        file: "content/events.json"
+        format: "json"
+        description: "Add, edit and reorder events. Drag items to reorder — though the site sorts by date automatically, so order here doesn't matter."
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            label_singular: "Event"
+            summary: "{{fields.title}} — {{fields.city}}"
+            collapsed: true
+            fields:
+              - label: "Event title"
+                name: "title"
+                widget: "string"
+                hint: "e.g. Third Annual Flagship Event"
+
+              - label: "Date"
+                name: "date"
+                widget: "datetime"
+                date_format: "YYYY-MM-DD"
+                time_format: false
+                format: "YYYY-MM-DD"
+                hint: "Future dates appear under Upcoming Events automatically."
+
+              - label: "End date (multi-day events only)"
+                name: "endDate"
+                widget: "datetime"
+                date_format: "YYYY-MM-DD"
+                time_format: false
+                format: "YYYY-MM-DD"
+                required: false
+                default: ""
+                hint: "Leave blank for single-day events."
+
+              - label: "Date is approximate"
+                name: "dateApprox"
+                widget: "boolean"
+                default: false
+                required: false
+                hint: "Tick this if you only know the year — the site will show just the year instead of a full date."
+
+              - label: "Venue"
+                name: "venue"
+                widget: "string"
+                required: false
+                default: ""
+                hint: "e.g. Baker McKenzie"
+
+              - label: "City"
+                name: "city"
+                widget: "string"
+                required: false
+                default: ""
+                hint: "e.g. Sydney"
+
+              - label: "Hosted by"
+                name: "host"
+                widget: "string"
+                required: false
+                default: ""
+                hint: "The organisation providing the venue. Leave blank if not applicable."
+
+              - label: "Theme"
+                name: "theme"
+                widget: "string"
+                required: false
+                default: ""
+                hint: "Shown in quotes under the title, e.g. Progress Beyond Policy"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+                required: false
+                default: ""
+
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                required: false
+                default: []
+                hint: "Short labels, e.g. Flagship, Roundtable, Women in Open Banking ANZ"
+
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                required: false
+                default: []
+                label_singular: "Photo"
+                summary: "{{fields.caption}}"
+                fields:
+                  - label: "Image"
+                    name: "src"
+                    widget: "image"
+                    media_library:
+                      config:
+                        max_file_size: 3000000
+                    hint: "Landscape images work best. Keep files under 3MB."
+                  - label: "Caption"
+                    name: "caption"
+                    widget: "string"
+                    required: false
+                    default: ""
+
+              - label: "More info link"
+                name: "link"
+                widget: "string"
+                required: false
+                default: ""
+                hint: "Optional URL — adds a 'More info' button to the event."
+
+          - label: "Women in Open Banking — event photos"
+            name: "womenGallery"
+            widget: "list"
+            label_singular: "Photo"
+            summary: "{{fields.event}} — {{fields.caption}}"
+            collapsed: false
+            required: false
+            default: []
+            hint: "The 'Our Events in Action' gallery on the Women in Open Banking page. Edit the caption under each photo here. Drag to reorder. Leave the image blank to show a 'photo coming soon' placeholder."
+            fields:
+              - label: "Photo"
+                name: "src"
+                widget: "image"
+                required: false
+                default: ""
+                media_folder: "/images/women"
+                public_folder: "images/women"
+                hint: "Landscape (4:3) works best. Leave blank to keep the placeholder."
+              - label: "Description / caption"
+                name: "caption"
+                widget: "text"
+                required: false
+                default: ""
+                hint: "Shown under the photo. Keep it to one line for a tidy grid."
+              - label: "Event label"
+                name: "event"
+                widget: "string"
+                required: false
+                default: ""
+                hint: "Small purple label above the caption, e.g. 2026 Flagship Event"
+
+          - label: "Event partners"
+            name: "partners"
+            widget: "list"
+            label_singular: "Partner"
+            summary: "{{fields.name}}"
+            collapsed: true
+            required: false
+            default: []
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Logo"
+                name: "logo"
+                widget: "image"
+                required: false
+                default: ""
+                hint: "Optional. Without a logo the partner shows as a styled name card."
+              - label: "Website"
+                name: "url"
+                widget: "string"
+                required: false
+                default: ""

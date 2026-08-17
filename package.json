@@ -1,0 +1,15 @@
+{
+  "name": "openfinanceanz-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open Finance ANZ website. Static multi-page build from a single index.html source.",
+  "scripts": {
+    "build": "node build.js",
+    "verify": "node verify.js",
+    "check": "node build.js && node verify.js",
+    "serve": "node build.js && node -e \"require('http').createServer((q,s)=>{const p=require('path'),f=require('fs');let u=q.url.split('?')[0];let t=p.join('dist',u);if(!f.existsSync(t)||f.statSync(t).isDirectory())t=p.join('dist',u,'index.html');if(!f.existsSync(t)){s.writeHead(404,{'Content-Type':'text/html'});return s.end(f.readFileSync('dist/404.html'))}const e=p.extname(t);const m={'.html':'text/html','.css':'text/css','.js':'text/javascript','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.xml':'application/xml'}[e]||'application/octet-stream';s.writeHead(200,{'Content-Type':m});s.end(f.readFileSync(t))}).listen(8080,()=>console.log('http://localhost:8080'))\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

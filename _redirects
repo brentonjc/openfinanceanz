@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------
+# Indexed URLs on the current site (confirmed via Search Console):
+#   /                            -> unchanged
+#   /about                       -> unchanged
+#   /women-in-open-banking-anz   -> unchanged
+# All three are served directly by this site, so no redirect needed.
+# ---------------------------------------------------------------
+
+# Safety net for slugs that were used during development or that
+# people commonly guess. Harmless if never hit.
+/women-in-open-banking   /women-in-open-banking-anz   301
+/about-us                /about                       301
+/contact-us              /contact                     301
+/reports                 /ecosystem-reports           301
+/ecosystem               /ecosystem-reports           301
+
+# SPA fallback: any other route serves index.html, which renders the
+# correct page from the URL path.
+/*  /index.html  200

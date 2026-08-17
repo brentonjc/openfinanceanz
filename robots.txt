@@ -1,0 +1,60 @@
+# ---------------------------------------------------------------
+# Open Finance ANZ
+#
+# Posture: allow everything except the CMS admin area.
+#
+# AI crawlers fall into two groups and the distinction matters:
+#
+#   SEARCH / RETRIEVAL crawlers fetch pages in real time to answer a
+#   user's question and can cite you. Blocking these removes you from
+#   AI search results. We allow them — being citable is the point.
+#
+#   TRAINING crawlers collect content for future model training. They
+#   don't drive traffic. We allow them too, since our research is
+#   published free and wider circulation serves the mission. Flip the
+#   Disallow lines below if that position ever changes.
+# ---------------------------------------------------------------
+
+User-agent: *
+Disallow: /admin/
+Allow: /
+
+# --- AI search & retrieval (recommended: allow) ---
+User-agent: OAI-SearchBot
+Disallow: /admin/
+Allow: /
+
+User-agent: ChatGPT-User
+Disallow: /admin/
+Allow: /
+
+User-agent: Claude-SearchBot
+Disallow: /admin/
+Allow: /
+
+User-agent: Claude-User
+Disallow: /admin/
+Allow: /
+
+User-agent: PerplexityBot
+Disallow: /admin/
+Allow: /
+
+# --- AI training (allowed; change Disallow to / to opt out) ---
+User-agent: GPTBot
+Disallow: /admin/
+Allow: /
+
+User-agent: ClaudeBot
+Disallow: /admin/
+Allow: /
+
+User-agent: Google-Extended
+Disallow: /admin/
+Allow: /
+
+User-agent: Applebot-Extended
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://www.openfinanceanz.com/sitemap.xml

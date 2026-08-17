@@ -1,0 +1,152 @@
+{
+  "home": {
+    "heroHeadline": "The community advancing Open Banking & Finance in Australia & New Zealand.",
+    "heroSubtitle": "Join 2,000+ professionals shape the future of open finance across ANZ.",
+    "testimonial": {
+      "quote": "\"I am excited and encouraged by the ambition of this ecosystem report in setting some big five-year goals for the future of Open Banking and open finance in Australia. I truly believe in the value that Open Banking can bring to economies and that if the ecosystem fixes the known challenges then the CDR will be a great success.\"",
+      "name": "Dr Bill Roberts",
+      "title": "Fellow at the University of Cambridge Judge Business School Centre for Alternative Finance",
+      "photo": ""
+    },
+    "stats": [
+      {
+        "value": "2,000+",
+        "label": "Community Members"
+      },
+      {
+        "value": "9",
+        "label": "Reports Published"
+      },
+      {
+        "value": "400+",
+        "label": "Organisations Mapped"
+      },
+      {
+        "value": "15+",
+        "label": "Events Since 2021"
+      }
+    ],
+    "heroImage": "",
+    "featuredIn": [
+      {
+        "logo": ""
+      },
+      {
+        "logo": ""
+      },
+      {
+        "logo": ""
+      },
+      {
+        "logo": ""
+      },
+      {
+        "logo": ""
+      },
+      {
+        "logo": ""
+      }
+    ],
+    "testimonial2": {
+      "quote": "\"Mastercard is a proud supporter of FinTech Australia and Open Finance ANZ and partners in the development of the Australian and Aotearoa New Zealand Open Banking Ecosystem Maps. These reports give valuable insights into the current state of play of open banking in the region, who the key players are and the unique opportunities.\"",
+      "name": "Brenton Charnley",
+      "title": "Vice President, Mastercard",
+      "photo": ""
+    }
+  },
+  "ecosystem": {
+    "heroHeadline": "Open Banking Ecosystem Maps",
+    "au": {
+      "overview": "Australia's Consumer Data Right gives consumers and businesses the ability to safely share the data that banks and other providers hold about them. Banking was the first sector designated, with the major banks live from 2020 and the regime since extended to energy and non-bank lending. It remains one of the most comprehensive economy-wide open data regimes in the world, and the participants, use cases and access models continue to shift each year.",
+      "reports": "We have published six editions of the Australian Open Banking Ecosystem Map and Report. Each edition maps every data holder, accredited data recipient, intermediary and live use case in the market, and tracks how the ecosystem has changed since the previous edition. The latest edition covers data to July 2025 and sets out a 2030 vision for CDR adoption.",
+      "editions": "6",
+      "coverImage": ""
+    },
+    "nz": {
+      "overview": "New Zealand's Consumer Data Right is established under the Customer and Product Data Act 2025. Banking was designated as the first sector, and regulated open banking went live on 1 December 2025 with ANZ, ASB, BNZ and Westpac required to share customer data and support payment initiation on request. Kiwibank follows for payments from June 2026 and account information from December 2026, and other deposit-takers can opt in. Alongside the regulated regime, an active ecosystem built on Payments NZ API Centre standards and other access models has been operating for several years.",
+      "reports": "Our first Aotearoa New Zealand edition was published in November 2024, in collaboration with local industry bodies. It was the first consolidated view of who was participating in New Zealand open banking ahead of the regime commencing, covering data holders, third party providers across both API Standards and other access models, and the use cases already live in market.",
+      "editions": "1",
+      "coverImage": ""
+    }
+  },
+  "women": {
+    "heroHeadline": "Women in Open Banking ANZ",
+    "heroTagline": "Connect. Amplify. Grow"
+  },
+  "about": {
+    "heroHeadline": "We exist to support the Australian and New Zealand ecosystems to make open banking and open finance a reality.",
+    "team": [
+      {
+        "name": "Brenton Charnley",
+        "role": "Co-Founder",
+        "photo": ""
+      },
+      {
+        "name": "Jennifer Harrison",
+        "role": "Co-Founder",
+        "photo": ""
+      }
+    ],
+    "ecosystemChampions": [
+      {
+        "name": "Claude Maroun",
+        "role": "Ecosystem Champion",
+        "photo": ""
+      }
+    ],
+    "timeline": [
+      {
+        "year": "2020",
+        "text": "The Consumer Data Right goes live in Australia, with the major banks the first data holders to share data."
+      },
+      {
+        "year": "2021",
+        "text": "Open Finance ANZ founded as an independent, community-led initiative."
+      },
+      {
+        "year": "2022",
+        "text": "Published our first Open Banking Ecosystem Map for Australia."
+      },
+      {
+        "year": "2024",
+        "text": "Launched Women in Open Banking ANZ, and published our first Aotearoa New Zealand Open Banking Ecosystem Map."
+      },
+      {
+        "year": "2025",
+        "text": "Released the 2030 Vision for the Consumer Data Right in our Australian ecosystem report."
+      },
+      {
+        "year": "2026",
+        "text": "Regulated open banking goes live in New Zealand under the Customer and Product Data Act. 9 reports published, 400+ organisations mapped, 2,000+ community members."
+      }
+    ]
+  },
+  "contact": {
+    "heroHeadline": "Get in Touch"
+  },
+  "events": {
+    "heroHeadline": "Bringing the open finance ecosystem together"
+  },
+  "reportPartners": [
+    {
+      "name": "FinTech Australia",
+      "logo": "images/logos/fintech-australia.png",
+      "url": ""
+    },
+    {
+      "name": "FinTech NZ",
+      "logo": "images/logos/fintech-nz.png",
+      "url": ""
+    },
+    {
+      "name": "Payments NZ",
+      "logo": "images/logos/payments-nz.png",
+      "url": ""
+    },
+    {
+      "name": "Mastercard",
+      "logo": "images/logos/mastercard.png",
+      "url": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+# Netlify configuration — Open Finance ANZ
+# Static build: build.js pre-renders index.html into one file per route.
+
+[build]
+  command = "node build.js && node verify.js"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Extracted CSS/JS carry a content hash in the filename, so a change
+# produces a new URL. Safe to cache permanently.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Never index the CMS admin area
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+# Content JSON is still fetched client-side so CMS edits appear for
+# visitors immediately. Must not be cached aggressively.
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Backstop directives that don't require enumerating every source,
+    # so they can't break the Web3Forms fetch or the Decap CMS:
+    #   object-src 'none'    — no <object>/<embed> plugin content
+    #   base-uri 'self'      — blocks <base> tag hijacking of relative URLs
+    #   frame-ancestors      — clickjacking backstop alongside X-Frame-Options
+    # A full script-src policy is intentionally omitted for now: the page
+    # still uses 3 inline onclick handlers and inline JSON-LD, which a strict
+    # script-src would break. Remove those, then tighten this.
+    Content-Security-Policy = "object-src 'none'; base-uri 'self'; frame-ancestors 'self'"

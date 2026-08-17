@@ -1,0 +1,225 @@
+{
+  "events": [
+    {
+      "title": "Fireside Chat with Peter Crone, ex-ACCC Commissioner, Consumer Data Right",
+      "date": "2026-09-02",
+      "endDate": "",
+      "dateApprox": false,
+      "venue": "Baker McKenzie",
+      "city": "Melbourne",
+      "host": "Baker McKenzie & Mastercard",
+      "theme": "",
+      "description": "Join Baker McKenzie and Mastercard for this fireside chat, 4\u20136pm in Melbourne.",
+      "tags": [
+        "Fireside Chat"
+      ],
+      "photos": [],
+      "link": ""
+    },
+    {
+      "title": "NZ Open Banking Ecosystem Report Launch",
+      "date": "2026-11-24",
+      "endDate": "",
+      "dateApprox": false,
+      "venue": "Chapman Tripp",
+      "city": "Auckland",
+      "host": "Chapman Tripp & Mastercard",
+      "theme": "",
+      "description": "Chapman Tripp and Mastercard host the launch of our New Zealand Open Banking Ecosystem Report in Auckland.",
+      "tags": [
+        "Report Launch"
+      ],
+      "photos": [],
+      "link": ""
+    },
+    {
+      "title": "NZ Women in Open Banking Workshop & Networking Event",
+      "date": "2026-11-24",
+      "endDate": "",
+      "dateApprox": false,
+      "venue": "Chapman Tripp",
+      "city": "Auckland",
+      "host": "Chapman Tripp & Mastercard",
+      "theme": "",
+      "description": "A workshop and networking event for Women in Open Banking ANZ, hosted by Chapman Tripp and Mastercard in Auckland.",
+      "tags": [
+        "Workshop",
+        "Women in Open Banking ANZ"
+      ],
+      "photos": [],
+      "link": ""
+    },
+    {
+      "title": "Third Annual Flagship Event",
+      "date": "2026-05-07",
+      "endDate": "",
+      "dateApprox": false,
+      "venue": "Baker McKenzie",
+      "city": "Sydney",
+      "host": "Baker McKenzie",
+      "theme": "Progress Beyond Policy",
+      "description": "Our third annual flagship brought together 100 guests to look past regulatory milestones and at what the ecosystem has actually delivered. Panel moderated by Simone Blackadder.",
+      "tags": [
+        "Flagship",
+        "Women in Open Banking ANZ"
+      ],
+      "photos": [],
+      "link": ""
+    },
+    {
+      "title": "Intersekt 2025 Roundtable",
+      "date": "2025-09-17",
+      "endDate": "2025-09-18",
+      "dateApprox": false,
+      "venue": "Grand Hyatt",
+      "city": "Melbourne",
+      "host": "",
+      "theme": "Financial Inclusion",
+      "description": "A lunchtime roundtable on day two of Intersekt, focused on how open banking can widen access to financial services rather than deepen existing divides.",
+      "tags": [
+        "Roundtable",
+        "Women in Open Banking ANZ"
+      ],
+      "photos": [],
+      "link": ""
+    },
+    {
+      "title": "2025 Flagship Event",
+      "date": "2025-01-01",
+      "endDate": "",
+      "dateApprox": true,
+      "venue": "Baker McKenzie",
+      "city": "Sydney",
+      "host": "Baker McKenzie",
+      "theme": "What is our vision for the Consumer Data Right in 2030?",
+      "description": "Our second annual flagship event, with a panel moderated by Jennifer Harrison, Co-Founder of Open Finance ANZ.",
+      "tags": [
+        "Flagship",
+        "Women in Open Banking ANZ"
+      ],
+      "photos": [],
+      "link": ""
+    },
+    {
+      "title": "Launch Workshop",
+      "date": "2024-07-02",
+      "endDate": "",
+      "dateApprox": false,
+      "venue": "King & Wood Mallesons",
+      "city": "Sydney",
+      "host": "King & Wood Mallesons",
+      "theme": "",
+      "description": "The launch of Women in Open Banking ANZ, bringing together 24 women from banks, fintechs, professional services, payments, data, government, academia and advocacy groups.",
+      "tags": [
+        "Workshop",
+        "Women in Open Banking ANZ"
+      ],
+      "photos": [],
+      "link": ""
+    }
+  ],
+  "partners": [
+    {
+      "name": "Mastercard",
+      "logo": "images/logos/mastercard.png",
+      "url": ""
+    },
+    {
+      "name": "FinTech Australia",
+      "logo": "images/logos/fintech-australia.png",
+      "url": ""
+    },
+    {
+      "name": "Baker McKenzie",
+      "logo": "images/logos/baker-mckenzie.png",
+      "url": ""
+    },
+    {
+      "name": "King & Wood Mallesons",
+      "logo": "images/logos/king-wood-mallesons.png",
+      "url": ""
+    },
+    {
+      "name": "Chapman Tripp",
+      "logo": "images/logos/chapman-tripp.png",
+      "url": ""
+    }
+  ],
+  "womenGallery": [
+    {
+      "src": "images/women/flagship-panel-wide.jpg",
+      "caption": "Panel discussion: Progress Beyond Policy",
+      "event": "2026 Flagship Event"
+    },
+    {
+      "src": "images/women/flagship-panel.jpg",
+      "caption": "Panellists in conversation",
+      "event": "2026 Flagship Event"
+    },
+    {
+      "src": "images/women/flagship-panellists.jpg",
+      "caption": "The Progress Beyond Policy panel",
+      "event": "2026 Flagship Event"
+    },
+    {
+      "src": "images/women/flagship-speakers.jpg",
+      "caption": "Speakers and hosts",
+      "event": "2026 Flagship Event"
+    },
+    {
+      "src": "images/women/flagship-welcome.jpg",
+      "caption": "Welcome address to a full room",
+      "event": "2026 Flagship Event"
+    },
+    {
+      "src": "images/women/flagship-audience.jpg",
+      "caption": "Guests at the flagship event",
+      "event": "2026 Flagship Event"
+    },
+    {
+      "src": "images/women/horizons-speakers.jpg",
+      "caption": "Speakers at New Horizons: Shaping the 2030 Vision for the CDR",
+      "event": "2030 Vision Event"
+    },
+    {
+      "src": "images/women/horizons-panel-candid.jpg",
+      "caption": "A lighter moment on the panel",
+      "event": "2030 Vision Event"
+    },
+    {
+      "src": "images/women/horizons-audience.jpg",
+      "caption": "Guests during the panel discussion",
+      "event": "2030 Vision Event"
+    },
+    {
+      "src": "images/women/horizons-networking.jpg",
+      "caption": "Conversations over lunch",
+      "event": "2030 Vision Event"
+    },
+    {
+      "src": "images/women/intersekt-roundtable-hosts.jpg",
+      "caption": "Roundtable Luncheon at Intersekt 2025, Melbourne",
+      "event": "Intersekt 2025"
+    },
+    {
+      "src": "images/women/roundtable-discussion.jpg",
+      "caption": "Group discussion session",
+      "event": "Roundtable"
+    },
+    {
+      "src": "images/women/workshop-group.jpg",
+      "caption": "Workshop attendees from across the ANZ ecosystem",
+      "event": "Workshop"
+    },
+    {
+      "src": "images/women/workshop-opening.jpg",
+      "caption": "Opening the workshop \u2014 Connect. Amplify. Grow.",
+      "event": "Workshop"
+    },
+    {
+      "src": "images/women/workshop-session.jpg",
+      "caption": "Setting the workshop ground rules",
+      "event": "Workshop"
+    }
+  ]
+}
