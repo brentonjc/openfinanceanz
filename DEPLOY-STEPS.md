@@ -79,10 +79,31 @@ first deploy.
 
 ## Step 4 — Enable CMS auth
 
-Netlify → Site configuration → Access control → OAuth → install the GitHub
-provider. Then visit `/admin/` and sign in with a GitHub account that has write
-access. Decap's `github` backend needs this handshake; there's no Git Gateway
-(deprecated Feb 2025, correctly avoided in your config).
+Decap's `github` backend needs an OAuth handshake to let editors sign in —
+there's no Git Gateway (deprecated Feb 2025, correctly avoided in your
+config). Netlify brokers that handshake, but it doesn't supply the OAuth
+app itself — you register your own, in two parts.
+
+**4a. Register a GitHub OAuth app** (this creates the Client ID and Secret —
+they don't exist until you do this):
+
+1. GitHub → your **Settings** (not the repo's) → **Developer settings** →
+   **OAuth Apps** → **New OAuth App** — direct link:
+   [github.com/settings/developers](https://github.com/settings/developers)
+2. Application name: anything, e.g. "Open Finance ANZ CMS"
+3. Homepage URL: your site URL
+4. **Authorization callback URL:** `https://api.netlify.com/auth/done` —
+   must be exact, this is Netlify's fixed endpoint, not yours
+5. Register, then note the **Client ID** shown on the app's page
+6. Click **Generate a new client secret** and copy it immediately — GitHub
+   only shows it once
+
+**4b. Give the credentials to Netlify:** Site configuration → Access control
+→ OAuth → Install provider → GitHub → paste the Client ID and Client
+Secret → save.
+
+Then visit `/admin/` and sign in with a GitHub account that has write
+access to the repo.
 
 ## Step 5 — Verify the fix landed
 
