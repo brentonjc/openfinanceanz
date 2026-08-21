@@ -60,13 +60,13 @@
       "overview": "Australia's Consumer Data Right gives consumers and businesses the ability to safely share the data that banks and other providers hold about them. Banking was the first sector designated, with the major banks live from 2020 and the regime since extended to energy and non-bank lending. It remains one of the most comprehensive economy-wide open data regimes in the world, and the participants, use cases and access models continue to shift each year.",
       "reports": "We have published six editions of the Australian Open Banking Ecosystem Map and Report. Each edition maps every data holder, accredited data recipient, intermediary and live use case in the market, and tracks how the ecosystem has changed since the previous edition. The latest edition covers data to July 2025 and sets out a 2030 vision for CDR adoption.",
       "editions": "6",
-      "coverImage": ""
+      "coverImage": "/images/reports/au-6th-edition.jpg"
     },
     "nz": {
       "overview": "New Zealand's Consumer Data Right is established under the Customer and Product Data Act 2025. Banking was designated as the first sector, and regulated open banking went live on 1 December 2025 with ANZ, ASB, BNZ and Westpac required to share customer data and support payment initiation on request. Kiwibank follows for payments from June 2026 and account information from December 2026, and other deposit-takers can opt in. Alongside the regulated regime, an active ecosystem built on Payments NZ API Centre standards and other access models has been operating for several years.",
       "reports": "Our first Aotearoa New Zealand edition was published in November 2024, in collaboration with local industry bodies. It was the first consolidated view of who was participating in New Zealand open banking ahead of the regime commencing, covering data holders, third party providers across both API Standards and other access models, and the use cases already live in market.",
       "editions": "1",
-      "coverImage": ""
+      "coverImage": "/images/reports/nz-1st-edition.jpg"
     }
   },
   "women": {
