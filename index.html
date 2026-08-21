@@ -1947,6 +1947,15 @@
       object-fit: cover;
     }
 
+    /* Some report covers are designed landscape (a slide-style title
+       page) rather than portrait. Forcing 3:4 on those crops straight
+       through the headline, so this sizes the box to the source image's
+       own ratio instead — full cover visible, nothing cropped. */
+    .report-cover img.report-cover-landscape {
+      aspect-ratio: 900 / 496;
+      object-fit: contain;
+    }
+
     /* Empty cover: hatched placeholder rather than a broken image */
     .report-cover img:not([src]),
     .report-cover img[src=""] {
@@ -3149,7 +3158,7 @@
           </div>
 
           <figure class="report-cover">
-            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22800%22%20viewBox%3D%220%200%20600%20800%22%3E%3Cdefs%3E%3Cpattern%20id%3D%22h%22%20width%3D%2224%22%20height%3D%2224%22%20patternTransform%3D%22rotate%2845%29%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23161620%22%2F%3E%3Crect%20width%3D%2212%22%20height%3D%2224%22%20fill%3D%22%231d1a2b%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%3Crect%20width%3D%22600%22%20height%3D%22800%22%20fill%3D%22url%28%23h%29%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%22598%22%20height%3D%22798%22%20fill%3D%22none%22%20stroke%3D%22%23A78BFA%22%20stroke-opacity%3D%220.3%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22380%22%20fill%3D%22%23A78BFA%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2246%22%20text-anchor%3D%22middle%22%20opacity%3D%220.6%22%3E%26%23128196%3B%3C%2Ftext%3E%3Ctext%20x%3D%22300%22%20y%3D%22450%22%20fill%3D%22%23b4bcc4%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EReport%20cover%3C%2Ftext%3E%3Ctext%20x%3D%22300%22%20y%3D%22490%22%20fill%3D%22%238b93a0%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%3EUpload%20in%20CMS%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Australian Open Banking Ecosystem Map and Report, sixth edition cover" data-cms-src="ecosystem.au.coverImage" loading="lazy">
+            <img src="/images/reports/au-6th-edition.jpg" alt="Australian Open Banking Ecosystem Map and Report, sixth edition cover" data-cms-src="ecosystem.au.coverImage" loading="lazy">
             <figcaption>Sixth Edition — September 2025</figcaption>
           </figure>
         </div>
@@ -3182,7 +3191,7 @@
           </div>
 
           <figure class="report-cover">
-            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22800%22%20viewBox%3D%220%200%20600%20800%22%3E%3Cdefs%3E%3Cpattern%20id%3D%22h%22%20width%3D%2224%22%20height%3D%2224%22%20patternTransform%3D%22rotate%2845%29%22%20patternUnits%3D%22userSpaceOnUse%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22%23161620%22%2F%3E%3Crect%20width%3D%2212%22%20height%3D%2224%22%20fill%3D%22%231d1a2b%22%2F%3E%3C%2Fpattern%3E%3C%2Fdefs%3E%3Crect%20width%3D%22600%22%20height%3D%22800%22%20fill%3D%22url%28%23h%29%22%2F%3E%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%22598%22%20height%3D%22798%22%20fill%3D%22none%22%20stroke%3D%22%23A78BFA%22%20stroke-opacity%3D%220.3%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22300%22%20y%3D%22380%22%20fill%3D%22%23A78BFA%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2246%22%20text-anchor%3D%22middle%22%20opacity%3D%220.6%22%3E%26%23128196%3B%3C%2Ftext%3E%3Ctext%20x%3D%22300%22%20y%3D%22450%22%20fill%3D%22%23b4bcc4%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2226%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%3EReport%20cover%3C%2Ftext%3E%3Ctext%20x%3D%22300%22%20y%3D%22490%22%20fill%3D%22%238b93a0%22%20font-family%3D%22system-ui%2Csans-serif%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%3EUpload%20in%20CMS%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Aotearoa New Zealand Open Banking Ecosystem Map and Report, first edition cover" data-cms-src="ecosystem.nz.coverImage" loading="lazy">
+            <img src="/images/reports/nz-1st-edition.jpg" class="report-cover-landscape" alt="Aotearoa New Zealand Open Banking Ecosystem Map and Report, first edition cover" data-cms-src="ecosystem.nz.coverImage" loading="lazy">
             <figcaption>First Edition — November 2024</figcaption>
           </figure>
         </div>
